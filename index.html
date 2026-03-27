@@ -102,6 +102,7 @@
     background: var(--ink);
     display: flex; flex-direction: column;
     margin-top: 76px;
+    overflow: hidden;
   }
   .hero-glow { display: none; }
 
@@ -180,10 +181,12 @@
     position: relative; z-index: 5;
     gap: 0;
     padding: 0 2vw;
+    overflow: hidden;
   }
   .bag {
     flex: 1;
     height: 55vh;
+    max-height: 55vh;
     position: relative;
     display: flex; align-items: flex-end; justify-content: center;
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
